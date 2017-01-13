@@ -27,7 +27,7 @@ import org.springframework.test.web.servlet.MockMvc;
 @ActiveProfiles("test")
 @RunWith(SpringRunner.class)
 @WebMvcTest(controllers = AccountController.class)
-public class AccountControllerIntegrationTest {
+public class AccountControllerTest {
 
 	@Autowired
 	private MockMvc mvc;
