@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pricedepo-account
+    username: pricedepo
+    password: pricedepo
+
+---
+
+spring:
+  profiles: test
+  
+#keep this test property for Context testing
+test:
+  property: test
