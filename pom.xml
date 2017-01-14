@@ -43,6 +43,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
+		
 
 		<!-- Used for Eureka health checkdd -->
 		<dependency>
