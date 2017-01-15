@@ -1,8 +1,10 @@
-package org.plutoz.pricedepo.account.ms.controller;
+package org.plutoz.pricedepo.account.ms.rest.controller;
 
 import org.plutoz.pricedepo.account.ms.domain.Account;
 import org.plutoz.pricedepo.account.ms.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,8 +21,8 @@ public class AccountController {
 	}
 
 	@GetMapping
-	Iterable<Account> getList(){
-		return accountService.findAll();
+	Page<Account> getList(Pageable pageable){
+		return accountService.findAll(pageable);
 	}
 
 }

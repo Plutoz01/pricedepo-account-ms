@@ -15,6 +15,7 @@ import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.plutoz.pricedepo.account.ms.domain.Account;
+import org.plutoz.pricedepo.account.ms.rest.controller.AccountController;
 import org.plutoz.pricedepo.account.ms.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
